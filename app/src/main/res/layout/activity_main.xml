@@ -7,11 +7,6 @@
         tools:context=".MainActivity">
 
     <ImageView
-            android:src="@drawable/timothy_bg"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-    <ImageView
             android:scaleType="centerCrop"
             android:id="@+id/image"
             android:layout_width="match_parent"
@@ -23,19 +18,40 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-    <!--<ImageView-->
-            <!--android:layout_marginTop="50px"-->
-            <!--android:layout_marginRight="50px"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:src="@drawable/timothy_calm"-->
-            <!--android:layout_width="300px"-->
-            <!--android:layout_height="350px"/>-->
 
-    <!--<ImageView-->
-            <!--android:layout_marginTop="50px"-->
-            <!--android:layout_marginLeft="50px"-->
-            <!--android:src="@drawable/timothy_logo"-->
-            <!--android:layout_width="250px"-->
-            <!--android:layout_height="250px"/>-->
+    <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="50px"
+            android:src="@drawable/timothy_logo"
+            android:layout_width="250px"
+            android:layout_height="250px"/>
+
+    <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/img_wutang"
+                android:src="@drawable/timothy_wutang"
+                android:layout_width="240px"
+                android:layout_height="240px"/>
+
+        <TextView
+                android:textColor="#1d1d1b"
+                android:textSize="40px"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_wutang"
+                android:text="Wu-Tang Clan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
 
 </RelativeLayout>

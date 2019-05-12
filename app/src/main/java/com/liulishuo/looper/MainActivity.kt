@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        JupiterGlobal.init(applicationContext)
         setContentView(R.layout.activity_main)
         initView()
 
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity() {
                 Log.e("####", "it: $position ${arr[position]}")
                 updateAd(arr[position])
             }
+        MediaPlayerUtils.getInstance().play(R.raw.cannon, true)
     }
 
     private fun initView() {
