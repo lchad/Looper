@@ -41,7 +41,16 @@ class MainActivity : AppCompatActivity() {
                 Log.e("####", "it: $position ${arr[position]}")
                 updateAd(arr[position])
             }
+    }
+
+    override fun onResume() {
+        super.onResume()
         MediaPlayerUtils.getInstance().play(R.raw.cannon, true)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        MediaPlayerUtils.getInstance().stop()
     }
 
     private fun initView() {
