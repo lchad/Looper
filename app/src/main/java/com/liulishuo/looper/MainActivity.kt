@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     private var disposable: Disposable? = null
 
     companion object {
-        const val interval = 4000L
+        const val interval = 5000L
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,9 +30,9 @@ class MainActivity : AppCompatActivity() {
         val arr = arrayOf(
             R.drawable.timothy1,
             R.drawable.timothy4,
-            R.drawable.timothy5,
             R.drawable.timothy6,
-            R.drawable.timothy7,
+            R.drawable.timothy10,
+            R.drawable.timothy11,
             R.drawable.timothy8
         )
         disposable =
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        MediaPlayerUtils.getInstance().play(R.raw.cannon, true)
+        MediaPlayerUtils.getInstance().play(R.raw.real_hb, true)
     }
 
     override fun onPause() {
